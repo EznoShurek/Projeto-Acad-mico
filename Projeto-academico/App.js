@@ -7,10 +7,6 @@ import TopAppBar from './front/topAppBar';
 export default function App() {
   const [TopAppBarTitle, setTopAppBarTitle] = useState("")
 
-  // function changeAppTitle(title) {
-  //   setTopAppBarTitle(title)
-  // }
-
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
