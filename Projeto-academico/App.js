@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
 import TopAppBar from './front/topAppBar';
+import { Emotion } from './front/api/Emotions';
 
 export default function App() {
   const [TopAppBarTitle, setTopAppBarTitle] = useState("")
@@ -11,6 +13,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <TopAppBar title={"Bem Vindo"}/>
+      <Emotion/>
     </View>
   );
 }

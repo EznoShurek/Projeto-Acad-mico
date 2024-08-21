@@ -1,8 +1,7 @@
 import axios from "axios";
 import { AppError } from "../utils/AppError";
-import { View, Button } from "react-native";
 
-const SERVER_URL = "192.168.1.14"
+const SERVER_URL = "http://192.168.1.14:8080"
 const api = axios.create({
     baseURL: SERVER_URL
 });
